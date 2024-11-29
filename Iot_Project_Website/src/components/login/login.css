@@ -1,0 +1,101 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  font-family: 'Arial', sans-serif;
+}
+
+h2 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.login-form {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Input Fields */
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.input-group input {
+  padding: 12px 3px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+  outline: none;
+}
+
+/* Error Message */
+.error {
+  color: red;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+/* Button Styles */
+.login-button {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .login-form {
+    padding: 20px;
+    width: 80%;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form {
+    padding: 15px;
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}

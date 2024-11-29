@@ -1,0 +1,186 @@
+/* General styles */
+.container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* Buttons */
+.connect-button,
+.add-button,
+.update-button,
+.modal-add-button,
+.modal-cancel-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.connect-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.add-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.update-button {
+  background-color: #ffc107;
+  color: white;
+}
+
+/* Table */
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.product-table th,
+.product-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.product-table th {
+  background-color: #f4f4f4;
+}
+
+.product-table td {
+  text-align: center; /* Center the content inside the cell */
+  vertical-align: middle; /* Vertically align in the middle */
+}
+
+.product-table td button {
+  margin: 0 10px; /* Add some space between the buttons */
+  display: inline-block;
+}
+/* Inputs */
+.price-input,
+.modal-input {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal content container */
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  max-height: 90%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Add a container for the buttons */
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Buttons style */
+.modal-add-button,
+.modal-cancel-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-add-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.modal-cancel-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.modal-input {
+  margin: 10px 0;
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .product-table th,
+  .product-table td {
+    padding: 8px;
+  }
+
+  .price-input,
+  .modal-input {
+    padding: 8px;
+  }
+
+  .modal-content {
+    width: 90%;
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 5px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+
+  .product-table th,
+  .product-table td {
+    padding: 6px;
+  }
+
+  .price-input,
+  .modal-input {
+    padding: 6px;
+  }
+
+  .modal-content {
+    width: 90%;
+    max-width: 400px;
+    padding: 15px;
+  }
+}
